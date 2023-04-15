@@ -1,0 +1,80 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "behavior3editor",
+    "description": "i18n:behavior3editor.description",
+    "main": "./dist/main.js",
+    "dependencies": {
+        "@logicflow/core": "^1.1.19",
+        "@logicflow/extension": "^1.1.19",
+        "fs-extra": "^10.0.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^9.0.5",
+        "@types/node": "^16.0.1",
+        "typescript": "^4.3.4"
+    },
+    "panels": {
+        "main": {
+            "title": "behavior3editor MainView",
+            "type": "simple",
+            "main": "dist/panels/main",
+            "size": {
+                "min-width": 400,
+                "min-height": 300,
+                "width": 1024,
+                "height": 600
+            }
+        },
+        "setting": {
+            "title": "Setting",
+            "type": "simple",
+            "flags": {
+                "resizable": false,
+                "alwaysOnTop ": true,
+                "save": true
+            },
+            "main": "dist/panels/setting/setting.js",
+            "size": {
+                "min-width": 400,
+                "min-height": 400,
+                "width": 400,
+                "height": 400
+            }
+        }
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:behavior3editor.path_root",
+                "label": "i18n:behavior3editor.open_panel",
+                "message": "open-main"
+            },
+            {
+                "path": "i18n:behavior3editor.path_root",
+                "label": "i18n:behavior3editor.open_setting_panel",
+                "message": "open-setting"
+            }
+        ],
+        "messages": {
+            "open-main": {
+                "public": true,
+                "methods": [
+                    "openMainPanel"
+                ]
+            },
+            "open-setting": {
+                "public": false,
+                "methods": [
+                    "openSettingPanel"
+                ]
+            }
+        }
+    },
+    "author": "xzben",
+    "editor": ">=3.5.0",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    }
+}

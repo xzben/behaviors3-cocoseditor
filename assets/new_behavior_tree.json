@@ -1,0 +1,42 @@
+{
+    "version": "0.3.0",
+    "scope": "tree",
+    "id": "a1591bc8-2189-432a-914d-5b5af3af9b8c",
+    "title": "new_behavior_tree",
+    "root": "a5ff29a3-79b2-46ab-8f31-9297f6e2f37a",
+    "properties": {},
+    "nodes": {
+        "ee1009de-128a-4e49-93bb-b8bf9da3ef75": {
+            "id": "ee1009de-128a-4e49-93bb-b8bf9da3ef75",
+            "name": "MemSequence",
+            "title": "MemSequence",
+            "properties": {},
+            "display": {
+                "x": 380,
+                "y": 100
+            },
+            "description": "",
+            "children": []
+        },
+        "a5ff29a3-79b2-46ab-8f31-9297f6e2f37a": {
+            "id": "a5ff29a3-79b2-46ab-8f31-9297f6e2f37a",
+            "name": "Inverter",
+            "title": "Inverter",
+            "properties": {},
+            "display": {
+                "x": 180,
+                "y": 80
+            },
+            "description": "",
+            "children": [
+                "ee1009de-128a-4e49-93bb-b8bf9da3ef75"
+            ]
+        }
+    },
+    "display": {
+        "x": 7.2972972972973125,
+        "y": 80
+    },
+    "description": "",
+    "treeRoot": {}
+}

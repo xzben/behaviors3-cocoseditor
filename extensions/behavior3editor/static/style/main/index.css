@@ -1,0 +1,40 @@
+#view{
+    color: var(--color-normal-contrast-weakest);
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+#center_content{
+    height: 100%;
+    width: calc(100% - 420px);
+    background-color: #454545;
+    overflow: hidden;
+    border-left: 2px solid #5BC0DE;
+    border-right: 2px solid #5BC0DE;
+    border-top: 2px solid #5BC0DE;
+    float: left;
+}
+
+#drag_view{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #171717;
+}
+
+#graph_view
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.drap_move_node{
+    position: relative;
+}

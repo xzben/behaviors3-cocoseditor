@@ -1,0 +1,50 @@
+<!--
+ * @Author: xzben
+ * @Date: 2022-05-30 19:51:31
+ * @LastEditors: xzben
+ * @LastEditTime: 2022-06-10 11:38:54
+ * @Description: file content
+-->
+<div id="view">
+    <div class="menu">
+        <!-- <div class="dropdown">
+          <ui-button class="dropbtn">下拉菜单</button>
+          <div class="dropdown-content">
+            <a href="#">菜鸟教程 1</a>
+            <a href="#">菜鸟教程 2</a>
+            <a href="#">菜鸟教程 3</a>
+          </div>
+        </div> -->
+        <ui-button onclick="view.clickSetting()">Setting</ui-button>
+        <ui-button onclick="view.checkSaveTree()">Save</ui-button>
+        <ui-button onclick="view.clickNewTree()">New Tree</ui-button>
+    </div>
+    <div id="app">
+        <div id="left_list">
+            <ui-section class="config" id="TreeList" header="Tree" expand>
+            </ui-section>
+            
+            <ui-section class="config" id="compositeList" header="Composites" expand>
+            </ui-section>
+            <ui-section class="config" id="DecoratorList" header="Decorators" expand>
+            </ui-section>
+            <ui-section class="config" id="ActionList" header="Actions" expand>
+            </ui-section>
+            <ui-section class="config" id="ConditionList" header="Conditions" expand>
+            </ui-section>
+        </div>
+        <div id="center_content">
+            <ui-drag-area id="drag_view" droppable="composite,decorator,action,condition" ondrop="view.handleDropNode(...arguments);">
+                <div id="graph_view">
+                    
+                </div>
+            </ui-drag-area>
+        </div>
+        <div id="right_info">
+            <p>Properties</p>
+            <div id="propertiesView">
+              
+            </div>
+        </div>
+    </div>
+</div>

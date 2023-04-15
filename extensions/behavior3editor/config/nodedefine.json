@@ -1,0 +1,113 @@
+[
+    { 
+        "name" : "Sequence",                  
+        "title" : "Sequence",               
+        "category" : "composite",   
+        "properties" : [] 
+    },
+    { 
+        "name" : "Priority",                  
+        "title" : "Priority",               
+        "category" : "composite",   
+        "properties" : [] 
+    },
+    { 
+        "name" : "MemSequence",               
+        "title" : "MemSequence",            
+        "category" : "composite",   
+        "properties" : [] 
+    },
+    { 
+        "name" : "MemPriority",               
+        "title" : "MemPriority",            
+        "category" : "composite",   
+        "properties" : [] 
+    },
+    { 
+        "name" : "Repeater",                  
+        "title" : "Repeat @x",              
+        "category" : "decorator",   
+        "properties" : [ 
+            { "name" : "maxLoop", "type" : "number", "default" : -1 }
+        ] 
+    },
+    { 
+        "name" : "RepeatUntilFailure",        
+        "title" : "Repeat Until Failure",   
+        "category" : "decorator",   
+        "properties" : [
+            { "name" : "maxLoop", "type" : "number", "default" : -1 }
+        ] 
+    },
+    { 
+
+        "name" : "RepeatUntilSuccess",        
+        "title" : "Repeat Until Success",   
+        "category" : "decorator",   
+        "properties" : [
+            { "name" : "maxLoop", "type" : "number", "default" : -1 }
+        ]
+    },
+    { 
+
+        "name" : "MaxTime",                   
+        "title" : "Max @ms",                
+        "category" : "decorator",   
+        "properties" : [
+            { "name" : "maxTime", "type" : "number", "default" : 0 }
+        ] 
+    },
+    { 
+
+        "name" : "Inverter",                  
+        "title" : "Inverter",              
+        "category" : "decorator",   
+        "properties" : [] 
+    },
+    { 
+
+        "name" : "Limiter",                   
+        "title" : "Limit @ Activations",    
+        "category" : "decorator",   
+        "properties" : [
+            { "name" : "maxLoop", "type" : "number", "default" : 1 }
+        ] 
+    },
+    { 
+
+        "name" : "Failer",                    
+        "title" : "Failer",                 
+        "category" : "action",      
+        "properties" : [] 
+    },
+    { 
+
+        "name" : "Succeeder",                 
+        "title" : "Succeeder",             
+        "category" : "action",      
+        "properties" : [] 
+    },
+    { 
+
+        "name" : "Runner",                    
+        "title" : "Runner",                 
+        "category" : "action",      
+        "properties" : [] 
+    },
+    { 
+
+        "name" : "Error",                     
+        "title" : "Error",                  
+        "category" : "action",      
+        "properties" : [] 
+    },
+    { 
+
+        "name" : "Wait",                      
+        "title" : "Wait @ms",               
+        "category" : "action",      
+        "properties" : [
+            { "name" : "milliseconds", "type" : "number", "default" : 0 }
+        ] 
+    }
+]

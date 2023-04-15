@@ -1,0 +1,13 @@
+[
+    { 
+
+        "name" : "Test",                      
+        "title" : "Test",               
+        "category" : "condition",      
+        "properties" : [
+            { "name" : "milliseconds", "type" : "number", "default" : 0, "config" : { "step" : 1, "max" : 100, "min" : 1, "preci" : "0" } },
+            { "name" : "a", "type" : "boolean", "default" : true },
+            { "name" : "b", "type" : "string", "default" : "ssss" }
+        ] 
+    }
+]

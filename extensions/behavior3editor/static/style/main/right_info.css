@@ -1,0 +1,127 @@
+
+#right_info{
+    height:100%;
+    width: 200px;
+    background-color:#2F2F2F;
+    border-top: 2px solid #5BC0DE;
+    float: left;
+}
+
+#right_info p{
+    background-color: #454545;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    font-size: 20px;
+}
+
+#right_info .propName
+{
+    display: inline-block;
+    font-size: 20px;
+    color: #949494;
+}
+
+#propertiesView{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#propertiesView ui-input{
+    background-color: #ffffff;
+    -webkit-text-fill-color: #2F2F2F;
+    font-size: 16px;
+    height: 30px;
+}
+
+#propertiesView ui-num-input{
+    background-color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    font-size: 16px;
+    height: 30px;
+}
+
+#propertiesView ui-textarea{
+    background-color: #ffffff;
+    -webkit-text-fill-color: #2F2F2F;
+    font-size: 16px;
+}
+
+#propertiesView p{
+    background-color:#2F2F2F;
+    color: #979797;
+    text-align: center;
+}
+
+#propertiesView .propAdd
+{    
+    background-color: #51ff00;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#propertiesView .propAdd:hover
+{    
+    background-color: #75f03c;
+}
+
+
+/* 下拉内容 (默认隐藏) */
+#propertiesView .dropdown-content {
+    min-width: 100px;
+}
+
+.propTitle{
+    display: block;
+    margin-top: 10px;
+    color: #949494;
+    font-size: 18px;
+}
+
+ui-prop .propTitle{
+    display: inline-block;
+}
+
+.properties
+{
+    /* background-color: #5CB85C; */
+}
+
+.property_item
+{
+    /* background-color: #511dca;
+    padding: 0px; */
+}
+
+.propDel{
+    padding: 2px;
+    width: 50px;
+    background-color: #D9534F;
+    font-size: 20px;
+}
+
+.propkey{
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    padding: auto;
+    margin-right: 2px;
+}
+
+.propvalue{
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    padding: auto;
+    background-color:#161921;
+}
+
+.propDel:hover{
+    background-color: #e06965;
+}
+
